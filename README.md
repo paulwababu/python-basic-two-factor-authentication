@@ -1,1 +1,1 @@
-The OTP is pretty basic, we need to store the OTP code to a database, then during registration, we verify the code sent matches the one generated.
+The OTP is pretty basic, we store the OTP generated and send it to a remote database,assuming you have configured the firewall rules on the remote db to enable remote connection.
