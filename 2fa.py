@@ -1,7 +1,7 @@
 #generate a random 4 digit number
 #initialize and use the SMS api from africa's talking
 #connect to gcloud remote mysql database
-#send 2fa code generated to the database-verify on table fa
+#send 2fa code generated to the database named verify on table called fa and column named address 
 
 import africastalking
 import os
