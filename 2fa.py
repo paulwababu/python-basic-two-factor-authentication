@@ -25,7 +25,7 @@ api_key = "#"
 africastalking.initialize(username,api_key)
 
 #recipients
-recipients = ['+254796919703']
+recipients = ['#']
 
 #generate random 4 digit PIN
 secret_key = secrets.randbelow(10000)
