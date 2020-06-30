@@ -5,11 +5,11 @@ import secrets
 
 #initialize the sdk
 username = "TruthWifiPlatform"
-api_key = "d7b6edd0dd40009d278577b3991802b3d2aa59ce09dc9caa27615399abd70990"
+api_key = "#"
 africastalking.initialize(username,api_key)
 
 #recipients
-recipients = ['+254797584194']
+recipients = ['#']
 
 
 #generate random 4 digit PIN
