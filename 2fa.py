@@ -6,37 +6,19 @@
 import africastalking
 import os
 import secrets
-import mysql.connector
-
-#variable for connecting to remote database
-mydb = mysql.connector.connect(
-    host = "35.232.88.217",
-    user = "test_remote",
-    password = "test_remote",
-    database = "verify"
-)
-
-mycursor = mydb.cursor()
-
 
 #initialize the sdk
-username = "#"
-api_key = "#"
+username = "TruthWifiPlatform"
+api_key = "8a05856fb144470a0a303c65cc48906561548daf81e1bc9310b8ff4846c2cbf9"
 africastalking.initialize(username,api_key)
 
 #recipients
-recipients = ['#']
+recipients = ['254797584194']
 
 #generate random 4 digit PIN
 secret_key = secrets.randbelow(10000)
 message = ("%04d") %secret_key
 code = message
-
-sql=("INSERT INTO fa (address) VALUES ({})".format(code))
-
-mycursor.execute(sql, code)
-
-mydb.commit()
 
 #initialize the service, in our case, SMS
 sms = africastalking.SMS
